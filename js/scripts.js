@@ -14,9 +14,13 @@ function Order() {
   this.cost=0;
 }
 
+//Prototype function available to all instances of Order() that will add pizza to the order
 
+Order.prototype.addPie = function (pie) {
+  return this.pizzas.push(pie);
+};
 
-
+  
 //Prototype function/s available to all instances of pizza pies
 
 
