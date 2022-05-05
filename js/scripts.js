@@ -7,6 +7,13 @@ function PizzaPie(size, toppings) {
   this.toppings = [toppings];
 }
 
+//Constructor function to make order
+
+function Order() {
+  this.pizzas=[];
+  this.cost=0;
+}
+
 
 
 
