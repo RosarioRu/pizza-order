@@ -11,15 +11,14 @@ function PizzaPie(size, toppings) {
 
 PizzaPie.prototype.sumPieCost = function() {
   this.cost = 0;
-}
-
-
-PizzaPie.prototype.sumPieCost()
-
-Order.prototype.addPie = function (pie) {
-  pie.keyGiven = this.givePieKey();
-  return this.pizzas[pie.keyGiven] = pie;
+  if (this.size === "small") {
+    this.cost+=10;
+  }
+  else if (this.size === "medium") {
+    this.cost += 14;
+  }
 };
+
 
 //Constructor function to make order with a running total for cost and a property 'keyToAssign' to increment.
 
