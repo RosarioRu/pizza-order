@@ -34,7 +34,34 @@ PizzaPie {
   toppings: ["cheese", "pepperoni"],
   cost: 10
 }
+secondPie;
+PizzaPie {
+  size: "medium",
+  toppings: ["cheese", "pepperoni"],
+  cost: 14
+}
 
+Test 2: "Function should return $10 cost for a 'small', $14 for a 'medium', and $18 for a 'large'."
+Code: firstPie.sumPieCost()
+Expected Output: 
+firstPie;
+PizzaPie {
+  size: "small",
+  toppings: ["cheese", "pepperoni"],
+  cost: 10
+}
+secondPie;
+PizzaPie {
+  size: "medium",
+  toppings: ["cheese", "pepperoni"],
+  cost: 14
+}
+thirdPie;
+PizzaPie {
+  size: "large",
+  toppings: ["cheese", "pepperoni"],
+  cost: 18
+}
 
 Describe: Order()
 
