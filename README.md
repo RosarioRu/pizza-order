@@ -24,10 +24,9 @@ Order {
   cost: 0
 }
 
-Describe: prototype.addPie()
+Describe: Order.prototype.addPie()
 
 Test 1: "Prototype function for instance of 'Order()' that should add a PizzaPie object to the object with key 'pizzas."
-
 Code: myOrder.prototype.addPie(firstPie);
 Expected Output: 
 myOrder;
@@ -50,6 +49,18 @@ Order {
     toppings: ["cheese", "pepperoni"]
     },
   cost:0
+}
+
+Describe: Order.prototype.assignKey()
+
+Test 1: "Prototype function should return a numerical key that gets incremented each time it's called. This is assigned to each pizza object added to order. This will replace 'name' key currently being assigned when PizzaPie objects get added to Order."
+Code: myOrder.prototype.assignKey()
+Expected Output: 
+myOrder;
+Order { 
+  pizzas: {},
+  cost: 0,
+  keyToAssign: 1
 }
 
 
