@@ -63,7 +63,7 @@ PizzaPie {
   cost: 18
 }
 
-Test 4: "Function should return number of toppings and multiply that by 1.5 for a sm pizza, then add this to the base cost (determined previously based on size of pizza."
+Test 4: "Function should take number of toppings and multiply that by 1.5 for a sm pizza, then add this to the base cost (determined previously based on size of pizza."
 Code: firstPie.sumPieCost()
 Expected Output: 
 firstPie;
@@ -72,6 +72,16 @@ PizzaPie {
   toppings: ["cheese", "pepperoni"],
   cost: 13
 }
+
+Test 4: "Function should take number of toppings and multiply that by 1 for a sm pizza, 1.5 for a medium and by 2 for a large, then add this to the base cost (determined previously based on size of pizza."
+Code: firstPie.sumPieCost()
+Expected Output: 
+firstPie;
+PizzaPie { size: "small", toppings: ["cheese", "pepperoni"], cost: 12}
+secondPie;
+PizzaPie { size: "medium", toppings: ["cheese", "pepperoni"], cost: 17}
+thirdPie;
+PizzaPie { size: "large", toppings: ["cheese", "pepperoni"], cost: 22}
 
 
 Describe: Order()
