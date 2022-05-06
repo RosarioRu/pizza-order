@@ -24,6 +24,16 @@ Order {
   cost: 0
 }
 
+Test 2: "Constructor function should return an instance of user's "Order" with three properties, one an object that will hold PizzaPie objects, the second the cost of the order, and now the third will hold 'keyToAssign' which will start at 1."
+Code: let myOrder = new Order();
+Expected Output: 
+myOrder;
+Order {
+  pizzas: {},
+  cost: 0,
+  keyToAssign: 1
+}
+
 Describe: Order.prototype.addPie()
 
 Test 1: "Prototype function for instance of 'Order()' that should add a PizzaPie object to the object with key 'pizzas."

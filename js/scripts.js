@@ -14,6 +14,7 @@ function PizzaPie(name, size, toppings) {
 function Order() {
   this.pizzas = {};
   this.cost = 0;
+  this.keyToAssign = 0;
 }
 
 //Prototype function available to all instances of Order() that will add pizza to the order
