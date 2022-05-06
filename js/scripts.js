@@ -16,6 +16,8 @@ PizzaPie.prototype.sumPieCost = function() {
   }
   else if (this.size === "medium") {
     this.cost += 14;
+  } else {
+    this.cost += 18;
   }
 };
 
