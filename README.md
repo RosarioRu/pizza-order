@@ -68,9 +68,11 @@ myOrder;
 Order {
   pizzas: {1: PizzaPie {
     size: "small", 
-    toppings: ["cheese", "pepperoni"]
+    toppings: ["cheese", "pepperoni"],
+    keyGiven: 1
     },
-  cost:0
+  cost:0, 
+  keyToAssign: 1
 }
 
 Describe: Order.prototype.givePieKey()
