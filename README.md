@@ -25,6 +25,17 @@ PizzaPie {
   cost: 10
 }
 
+Test 2: "Function should return $10 cost for a 'small' pie but $14 for a 'medium'. Toppings still ignored for now."
+Code: firstPie.sumPieCost()
+Expected Output: 
+firstPie;
+PizzaPie {
+  size: "small",
+  toppings: ["cheese", "pepperoni"],
+  cost: 10
+}
+
+
 Describe: Order()
 
 Test 1: "Constructor function should return an instance of user's "Order" with two properties, one an object that will hold PizzaPie objects and the other the total cost."
