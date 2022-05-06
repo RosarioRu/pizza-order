@@ -61,6 +61,18 @@ Order {
   cost:0
 }
 
+Test 3: "Function should set a numerical key for each PizzaPie object added. This will replace setting the PizzaPie 'name' as the key when the PizzaPie object is added to the order."
+Code: myOrder.prototype.addPie(firstPie);
+Expected Output: 
+myOrder;
+Order {
+  pizzas: {1: PizzaPie {
+    size: "small", 
+    toppings: ["cheese", "pepperoni"]
+    },
+  cost:0
+}
+
 Describe: Order.prototype.givePieKey()
 
 Test 1: "Prototype function should return a numerical key that gets incremented each time it's called. This is assigned to each pizza object added to order. This will replace 'name' key currently being assigned when PizzaPie objects get added to Order."
