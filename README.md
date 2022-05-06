@@ -26,12 +26,26 @@ Order {
 
 Describe: prototype.addPie()
 
-Test 1: "Prototype function for instance of 'Order()' that should add a PizzaPie object to the object with key 'pizzas." Should set the name property of the pizza as the key."
+Test 1: "Prototype function for instance of 'Order()' that should add a PizzaPie object to the object with key 'pizzas."
+
+Code: myOrder.prototype.addPie(firstPie);
+Expected Output: 
+myOrder;
+Order {
+  pizzas: {PizzaPie {
+    size: "small", 
+    toppings: ["cheese", "pepperoni"]
+    },
+  cost:0
+}
+
+Test 2: "Function should set name property of the 'PizzaPie' object as the key."
 Code: myOrder.prototype.addPie(firstPie);
 Expected Output: 
 myOrder;
 Order {
   pizzas: {rose: PizzaPie {
+    name: "rose",
     size: "small", 
     toppings: ["cheese", "pepperoni"]
     },
