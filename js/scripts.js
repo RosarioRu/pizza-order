@@ -12,7 +12,7 @@ function PizzaPie(size, toppings) {
 PizzaPie.prototype.sumPieCost = function() {
   this.cost = 0;
   if (this.size === "small") {
-    this.cost+=10;
+    this.cost += 10 + (this.toppings[0].length*1.5);
   }
   else if (this.size === "medium") {
     this.cost += 14;
