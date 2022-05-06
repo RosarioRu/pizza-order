@@ -19,8 +19,11 @@ function Order() {
 //Prototype function available to all instances of Order() that will add pizza to the order
 
 Order.prototype.addPie = function (pie) {
-  return this.pizzas[pie.name] = pie;
+  pie.keyGiven = this.givePieKey();
+  return this.pizzas[pie.keyGiven] = pie;
 };
+
+
 
 //Prototype function available to all instances of Order() that will increment the keyToAssign property
 
