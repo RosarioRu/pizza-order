@@ -2,14 +2,13 @@
 
 //Constructor function to make pizza pies
 
-function PizzaPie(name, size, toppings) {
-  this.name = name;
+function PizzaPie(size, toppings) {
   this.size = size;
   this.toppings = [toppings];
 }
 
 
-//Constructor function to make order
+//Constructor function to make order with a running total for cost and a property 'keyToAssign' to increment.
 
 function Order() {
   this.pizzas = {};
