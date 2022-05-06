@@ -13,6 +13,18 @@ PizzaPie {
   toppings: ["cheese", "pepperoni"]
 }
 
+Describe: PizzaPie.prototype.sumPieCost()
+
+Test 1: "Prototype function should add the cost of an instance of PizzaPie and return it. To start just the cost of a 'small' pie should be $10, toppings will be ignored."
+Code: firstPie.sumPieCost()
+Expected Output: 
+firstPie;
+PizzaPie {
+  size: "small",
+  toppings: ["cheese", "pepperoni"],
+  cost: 10
+}
+
 Describe: Order()
 
 Test 1: "Constructor function should return an instance of user's "Order" with two properties, one an object that will hold PizzaPie objects and the other the total cost."
@@ -86,6 +98,7 @@ Order {
   cost: 0,
   keyToAssign: 1
 }
+
 
 
 
