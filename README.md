@@ -24,14 +24,14 @@ Order {
   cost: 0
 }
 
-Test 2: "Constructor function should return an instance of user's "Order" with three properties, one an object that will hold PizzaPie objects, the second the cost of the order, and now the third will hold 'keyToAssign' which will start at 1."
+Test 2: "Constructor function should return an instance of user's "Order" with three properties, one an object that will hold PizzaPie objects, the second the cost of the order, and now the third will hold 'keyToAssign' which will first be set to 0."
 Code: let myOrder = new Order();
 Expected Output: 
 myOrder;
 Order {
   pizzas: {},
   cost: 0,
-  keyToAssign: 1
+  keyToAssign: 0
 }
 
 Describe: Order.prototype.addPie()
@@ -61,10 +61,10 @@ Order {
   cost:0
 }
 
-Describe: Order.prototype.assignKey()
+Describe: Order.prototype.givePieKey()
 
 Test 1: "Prototype function should return a numerical key that gets incremented each time it's called. This is assigned to each pizza object added to order. This will replace 'name' key currently being assigned when PizzaPie objects get added to Order."
-Code: myOrder.prototype.assignKey()
+Code: myOrder.prototype.givePieKey()
 Expected Output: 
 myOrder;
 Order { 
@@ -72,6 +72,8 @@ Order {
   cost: 0,
   keyToAssign: 1
 }
+
+
 
 
 
