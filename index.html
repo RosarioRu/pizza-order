@@ -9,27 +9,73 @@
 </head>
 <body>
   <div class="container">
-    <div class="pizzeria-name">
-      <h1>Dad's Pizza</h1>
+    <div class="jumbotron">
+      <!-- <h1>Night Owl Pizza</h1>-->
       <p>The tastiest pizza on the West Coast</p>
     </div>
     <div class="featured-pies">
-      <h5>Featured Pies</h5>
+      <h5>Specialty Pies</h5>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Texas Toast: Butter garlic sauce topped with grass-fed ground beef and shredded cheedar cheese</li>
+        <li>Vegan Friend: Pesto sauce topped with cashew-ricotta and mushrooms</li>
+        <li>Paleo Friend: Sun-dried tomato sauce on cauliflower crust, topped with sausage and red onion</li>
       </ul>
     </div>
     <div class="custom-pizza">
+      <h5>Build Your Own</h5>
       <form id="make-your-own">
+        <fieldset>
+          <legend>Choose your toppings</legend>
+          <div>
+            <input type="checkbox" id="cheese" name="toppings" value="cheese" checked>
+            <label for="cheese">Cheese</label>
+          </div>
+          <div>
+            <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+            <label for="music">Pepperoni</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sausage" name="toppings" value="sausage">
+            <label for="sausage">Italian Sausage</label>
+          </div>
+          <div>
+            <input type="checkbox" id="bacon" name="toppings" value="bacon">
+            <label for="bacon">Canadian Bacon</label>
+          </div>
+          <div>
+            <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+          </div>
+          <div>
+            <input type="checkbox" id="olives" name="toppings" value="olives">
+            <label for="olives">Olives</label>
+          </div>
+          <div>
+            <input type="checkbox" id="peppers" name="toppings" value="peppers">
+            <label for="peppers">Green Peppers</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fish" name="toppings" value="fish">
+            <label for="fish">Anchovies</label>
+          </div>
+          <div>
+            <input type="checkbox" id="pinapple" name="toppings" value="pineapple">
+            <label for="pinapple">Pinapple</label>
+          </div>
+          <div>
+            <input type="checkbox" id="tofu" name="toppings" value="tofu">
+            <label for="tofu">Tofu Crumbles</label>
+          </div>
+        </fieldset>
        
       </form>
     </div>
+
+
     <div class="customer-info">
       <form id="customer">
         <label for="name">Your Name</label>
-        <input id="name" class="form-control" type="text" required>>
+        <input id="name" class="form-control" type="text" required>
       </form>
     </div>
 
