@@ -52,15 +52,14 @@ $(document).ready(function(){
   
   $("form#make-your-own").submit(function(event){
     event.preventDefault();
+    const pizzaSize = $("input:radio[name=size]:checked").val();
+    console.log(pizzaSize);
     const pizzaToppings = [];
     let selectedToppings = $("input[type='checkbox']:checked");
     for (let i=0; i<selectedToppings.length; i+=1) {
       pizzaToppings.push($(selectedToppings[i]).val());
     }
-
     console.log(pizzaToppings);
-  
-  
   });
 
 });

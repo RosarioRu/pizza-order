@@ -24,15 +24,25 @@
     <div class="custom-pizza">
       <h5>Build Your Own</h5>
       <form id="make-your-own">
-        <fieldset>
+        <div class="radio">
           <legend>Select Pizza Size</legend>
-          <input type="radio" id="small" name="size">
-          <label for="small">Small $10</label><br/>
-          <input type="radio" id="medium" name="size">
-          <label for="medium">Medium $14</label><br/>
-          <input type="radio" id="large" name="size">
-          <label for="large">Large $18</label>
-        </fieldset>
+          <label>
+            <input type="radio" name="size" value="small" checked>
+            Small
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="medium">
+            Medium
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="large">
+            Large
+          </label>
+        </div>
         <fieldset>
           <legend>Select your toppings</legend>
           <p>($1/each for small, $1.50 for medium, $2 for large)</p>
@@ -77,6 +87,7 @@
             <label for="pinapple">Pinapple</label>
           </div>
         </fieldset>
+        <button type="submit" class="btn">Add This Pizza</button>
        
       </form>
     </div>
