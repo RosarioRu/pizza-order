@@ -25,7 +25,17 @@
       <h5>Build Your Own</h5>
       <form id="make-your-own">
         <fieldset>
-          <legend>Choose your toppings</legend>
+          <legend>Select Pizza Size</legend>
+          <input type="radio" id="small" name="size">
+          <label for="small">Small $10</label><br/>
+          <input type="radio" id="medium" name="size">
+          <label for="medium">Medium $14</label><br/>
+          <input type="radio" id="large" name="size">
+          <label for="large">Large $18</label>
+        </fieldset>
+        <fieldset>
+          <legend>Select your toppings</legend>
+          <p>($1/each for small, $1.50 for medium, $2 for large)</p>
           <div>
             <input type="checkbox" id="cheese" name="toppings" value="cheese" checked>
             <label for="cheese">Cheese</label>
@@ -41,6 +51,10 @@
           <div>
             <input type="checkbox" id="bacon" name="toppings" value="bacon">
             <label for="bacon">Canadian Bacon</label>
+          </div>
+          <div>
+            <input type="checkbox" id="tofu" name="toppings" value="tofu">
+            <label for="tofu">Tofu Crumbles</label>
           </div>
           <div>
             <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
@@ -61,10 +75,6 @@
           <div>
             <input type="checkbox" id="pinapple" name="toppings" value="pineapple">
             <label for="pinapple">Pinapple</label>
-          </div>
-          <div>
-            <input type="checkbox" id="tofu" name="toppings" value="tofu">
-            <label for="tofu">Tofu Crumbles</label>
           </div>
         </fieldset>
        
