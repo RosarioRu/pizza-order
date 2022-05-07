@@ -50,8 +50,16 @@ Order.prototype.givePieKey = function () {
 
 $(document).ready(function(){
   
-  $("form#build-your-own").submit(function(event){
+  $("form#make-your-own").submit(function(event){
     event.preventDefault();
+    const pizzaToppings = [];
+    let selectedToppings = $("input[type='checkbox']:checked");
+    for (let i=0; i<selectedToppings.length; i+=1) {
+      pizzaToppings.push($(selectedToppings[i]).val());
+    }
+
+    console.log(pizzaToppings);
+  
   
   });
 
