@@ -50,3 +50,7 @@ body {
   margin: auto;
   margin-top: 3%;
 }
+
+#make-your-own p {
+  font-size: small;
+}
