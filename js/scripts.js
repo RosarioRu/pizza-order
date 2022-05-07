@@ -50,7 +50,7 @@ Order.prototype.givePieKey = function () {
 
 $(document).ready(function(){
   
-  $("form#make-pizza").submit(function(event){
+  $("form#build-your-own").submit(function(event){
     event.preventDefault();
   
   });
