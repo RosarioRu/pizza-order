@@ -1,14 +1,11 @@
 //Business Logic-------------------------------------------
 
 //Constructor function to make pizza pies.. need to somehow be sure the toppings parameter gets an array as argument!!
-
 function PizzaPie(size, toppings) {
   this.size = size;
   this.toppings = toppings;
 }
-
 //Prototype function to sum the cost of each pizza
-
 PizzaPie.prototype.sumPieCost = function() {
   this.cost = 0;
   if (this.size === "small") {
@@ -19,10 +16,11 @@ PizzaPie.prototype.sumPieCost = function() {
   } else {
     this.cost += 18 + (this.toppings.length*2);
   }
+  return this.cost;
 };
 
 
-//Constructor function to make order with a running total for cost and a property 'keyToAssign' to increment.
+//Constructor function to make order with a running total for total cost and a property 'keyToAssign' to increment.
 
 function Order() {
   this.pizzas = {};
@@ -33,6 +31,7 @@ function Order() {
 //Prototype function available to all instances of Order() that will add pizza to the order
 
 Order.prototype.addPie = function (pie) {
+  this.cost += pie.sumPieCost();
   pie.keyGiven = this.givePieKey();
   return this.pizzas[pie.keyGiven] = pie;
 };
