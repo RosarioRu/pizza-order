@@ -5,7 +5,7 @@ function PizzaPie(size, toppings) {
   this.size = size;
   this.toppings = toppings;
 }
-//Prototype function to sum the cost of each pizza
+//Prototype function to sum the cost of each pizza and return cost of pizza.
 PizzaPie.prototype.sumPieCost = function() {
   this.cost = 0;
   if (this.size === "small") {
