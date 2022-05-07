@@ -1,0 +1,14 @@
+.jumbotron {
+  background-image: url("../img/owlmoon.png");
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-repeat: x; */
+}
+
+.jumbotron p {
+  color: rgb(239, 239, 215);
+  float: right;
+  font-style: italic;
+  
+}
