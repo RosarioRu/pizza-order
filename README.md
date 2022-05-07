@@ -73,7 +73,7 @@ PizzaPie {
   cost: 13
 }
 
-Test 4: "Function should take number of toppings and multiply that by 1 for a sm pizza, 1.5 for a medium and by 2 for a large, then add this to the base cost (determined previously based on size of pizza."
+Test 5: "Function should take number of toppings and multiply that by 1 for a sm pizza, 1.5 for a medium and by 2 for a large, then add this to the base cost (determined previously based on size of pizza."
 Code: firstPie.sumPieCost()
 Expected Output: 
 firstPie;
@@ -145,6 +145,21 @@ Order {
   cost:0, 
   keyToAssign: 1
 }
+
+Test 4: "When an instance of PizzaPie() gets added to instance of Order(), it should increase the total cost (in 'Order") by the amount of the individual's pizza cost."
+Code: myOrder.prototype.addPie(firstPie);
+Expected Output: 
+myOrder;
+Order {
+  pizzas: {1: PizzaPie {
+    size: "small", 
+    toppings: ["cheese", "pepperoni"],
+    keyGiven: 1
+    },
+  cost: 12, 
+  keyToAssign: 1
+}
+
 
 Describe: Order.prototype.givePieKey()
 
