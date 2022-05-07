@@ -46,9 +46,13 @@ Order.prototype.givePieKey = function () {
 };
 
 
-
-
-
-
 //UI Logic--------------------------------------
 
+$(document).ready(function(){
+  
+  $("form#make-pizza").submit(function(event){
+    event.preventDefault();
+  
+  });
+
+});
