@@ -59,7 +59,20 @@ $(document).ready(function(){
     const customerPizza = new PizzaPie(selectedSize, selectedToppings)
     customerOrder.addPie(customerPizza);
     console.log(customerOrder);
-    console.log("Your pixa will cost: " + customerPizza.cost);
+
+    $(".ordering-page").hide();
+    $(".pizza-submitted").show();
+    $("#another-pizza").show();
+   
+   
+    $("#another-pizza").click(function() {
+      $("#another-pizza").hide();
+      $(".ordering-page").show();
+      $("input:radio[name=size]").prop("checked", false);
+      $("input[type='checkbox']").prop("checked", false);
+    });
+
+
 
     
 
