@@ -66,31 +66,22 @@ $(document).ready(function(){
     $(".pizza-submitted").show();
     $("#another-pizza").show();
     $("#done").show();
-   
-   
-    $("#another-pizza").click(function() {
-      $("#another-pizza").hide();
-      $(".ordering-page").show();
-      $(".pizza-submitted").hide();
-      $("input:radio[name=size]").prop("checked", false);
-      $("input[type='checkbox']").prop("checked", false);
-    });
 
+  });
 
+  $("#another-pizza").click(function() {
+    $("#another-pizza").hide();
+    $(".ordering-page").show();
+    $(".pizza-submitted").hide();
+    $("input:radio[name=size]").prop("checked", false);
+    $("input[type='checkbox']").prop("checked", false);
+  });
 
-    
-
-
-    // $("#return-home").click(function() {
-    //   $("#return-home").hide();
-    //   $(".row").show();
-    //   $("input#first-name").val("");
-    //   $("input#last-name").val("");
-    //   $("input#age").val("");
-    //   $("input#initial-deposit").val("");
-    //   $("#test").text("");
-    // });
-
+  $("#done").click(function() {
+    $("#another-pizza").hide();
+    // $(".ordering-page").show();
+    $(".pizza-submitted").hide();
+    $(".customer-info").show();
   });
 
 });
