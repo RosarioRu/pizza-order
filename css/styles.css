@@ -10,6 +10,7 @@ body {
   background-color: rgb(239, 239, 215);
   background-size: contain;
   background-repeat: no-repeat;
+  
 }
 
 .jumbotron p {
@@ -54,3 +55,27 @@ body {
 #make-your-own p {
   font-size: small;
 }
+
+.btn {
+  background-color: antiquewhite;
+}
+
+#another-pizza, #done, .pizza-submitted {
+  display: none;
+}
+
+#done {
+  margin-left: 5%;
+}
+
+.pizza-submitted {
+  background-color: rgba(235, 232, 229, 0.957);
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: .5%;
+  padding: 5%;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+}
+
