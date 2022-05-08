@@ -2,7 +2,7 @@
 
 #### By _**Rosario Ruvalcaba**_
 
-#### _An online ordering page featuring a build-your-own pizza form that can be submitted multiple times and displays the price of the pizzas and the order total. _
+#### _An online ordering page featuring a build-your-own pizza form that can be submitted multiple times and displays the price of the pizzas and the order total._
 
 ## Technologies Used
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-_This webpage was created as a project following Epicodus's Object-Oriented-Intermediate-Javascript section. The program uses forms to capture the size and toppings of a pizza and then calculates the cost. It uses Constructor and Prototype functions to store the user-created pizzas and add different properties (pie cost, numeric key for each pizza, total cost) as they are added to the final order. The cost of each individual pizza is displayed for the user as well as the order total. User can submit multiple pizzas.
+_This webpage was created as a project following Epicodus's Object-Oriented-Intermediate-Javascript section. The program uses forms to capture the size and toppings of a pizza and then calculates the cost. It uses Constructor and Prototype functions to store the user-created pizzas and add different properties (pie cost, numeric key for each pizza, total cost) as they are added to the final order. The cost of each individual pizza is displayed for the user as well as the order total. User can submit multiple pizzas._
 
 ## Setup/Installation Requirements
 
