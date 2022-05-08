@@ -5,6 +5,7 @@ function PizzaPie(size, toppings) {
   this.size = size;
   this.toppings = toppings;
 }
+
 //Prototype function to sum the cost of each pizza and return cost of pizza.
 PizzaPie.prototype.sumPieCost = function() {
   this.cost = 0;
@@ -21,7 +22,6 @@ PizzaPie.prototype.sumPieCost = function() {
 
 
 //Constructor function to make order with a running total for total cost and a property 'keyToAssign' to increment.
-
 function Order() {
   this.pizzas = {};
   this.cost = 0;
@@ -29,17 +29,13 @@ function Order() {
 }
 
 //Prototype function available to all instances of Order() that will add pizza to the order
-
 Order.prototype.addPie = function (pie) {
   this.cost += pie.sumPieCost();
   pie.keyGiven = this.givePieKey();
   return this.pizzas[pie.keyGiven] = pie;
 };
 
-
-
 //Prototype function available to all instances of Order() that will increment the keyToAssign property
-
 Order.prototype.givePieKey = function () {
   this.keyToAssign += 1;
   return this.keyToAssign;
@@ -60,6 +56,10 @@ $(document).ready(function(){
       pizzaToppings.push($(selectedToppings[i]).val());
     }
     console.log(pizzaToppings);
+
+
+
+
   });
 
 });
