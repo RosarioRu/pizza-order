@@ -1,5 +1,46 @@
-Test Driven Development Notes
+# _Night Owl Pizza_
 
+#### By _**Rosario Ruvalcaba**_
+
+#### _An online ordering page featuring a build-your-own pizza form that can be submitted multiple times and displays the price of the pizzas and the order total. _
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Markdown_
+* _Bootstrap_
+* _JavaScript_
+* _jQuery_
+
+## Description
+
+_This webpage was created as a project following Epicodus's Object-Oriented-Intermediate-Javascript section. The program uses forms to capture the size and toppings of a pizza and then calculates the cost. It uses Constructor and Prototype functions to store the user-created pizzas and add different properties (pie cost, numeric key for each pizza, total cost) as they are added to the final order. The cost of each individual pizza is displayed for the user as well as the order total. User can submit multiple pizzas.
+
+## Setup/Installation Requirements
+
+* _Clone repository from Github and save a copy on own computer_
+
+* _Using GUI or terminal, open cloned project directory (titled 'pizza-order') to view files_
+
+* _Using GUI or terminal, open index.html file to view project locally_
+
+* _Stylesheet, image, js file, and readme can also be opened from project home directory_
+
+* _(See Github page for this project](https://rosarioru.github.io/pizza-order/)_
+
+## Known Bugs
+
+* _No known bugs_
+
+## License
+
+MIT License
+
+Copyright (c) _May_2022_ _Rosario Ruvalcaba Harwood_
+
+
+## Test Driven Development Notes
 
 Describe: PizzaPie()
 
