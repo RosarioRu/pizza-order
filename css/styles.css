@@ -60,7 +60,7 @@ body {
   background-color: antiquewhite;
 }
 
-#another-pizza, #done, .pizza-submitted {
+#another-pizza, #done, .pizza-submitted, .customer-info, .last-thing {
   display: none;
 }
 
@@ -79,3 +79,28 @@ body {
   margin-top: 3%;
 }
 
+.customer-info {
+  background-color: rgba(248, 246, 244, 0.957);
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: .5%;
+  padding: 4%;
+  width: 40%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+#final-order {
+  margin-top: 3%;
+}
+
+.last-thing {
+  background-color: rgba(235, 232, 229, 0.957);
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: .5%;
+  padding: 5%;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+}

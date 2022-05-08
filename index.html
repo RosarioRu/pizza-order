@@ -104,11 +104,21 @@
 
     <div class="customer-info">
       <form id="customer">
+        <h5>Please enter your information</h5>
         <label for="name">Your Name</label>
         <input id="name" class="form-control" type="text" required>
+        <label for="address">Address</label>
+        <input id="address" class="form-control" type="text" required>
+        <button type="submit" class="btn" id="final-order">Submit Order</button>
       </form>
     </div>
 
-  </div> <!-- closure for container div -->
+    <div class="last-thing">
+      <h5>Thank you for your order <span class="customer-name"></span>!</h5><br/>
+      <p>Order total: <span class="order-cost"></span></p>
+      <p>Delivery address: <span class="deliver-to"></span></p>
+    </div>
+
+  </div> 
 </body>
 </html>

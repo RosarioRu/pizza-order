@@ -51,22 +51,18 @@ $(document).ready(function(){
     const selectedSize = $("input:radio[name=size]:checked").val();
     const selectedToppings = [];
     let pizzaToppings = $("input[type='checkbox']:checked");
-
     for (let i=0; i<pizzaToppings.length; i+=1) {
       selectedToppings.push($(pizzaToppings[i]).val());
-    }
-
+    };
     const customerPizza = new PizzaPie(selectedSize, selectedToppings)
     customerOrder.addPie(customerPizza);
     console.log(customerOrder);
     $(".pizza-cost").html("$" + customerPizza.cost);
     $(".order-cost").html("$" + customerOrder.cost);
-
     $(".ordering-page").hide();
     $(".pizza-submitted").show();
     $("#another-pizza").show();
     $("#done").show();
-
   });
 
   $("#another-pizza").click(function() {
@@ -79,9 +75,19 @@ $(document).ready(function(){
 
   $("#done").click(function() {
     $("#another-pizza").hide();
-    // $(".ordering-page").show();
     $(".pizza-submitted").hide();
     $(".customer-info").show();
   });
 
+  $("form#customer").submit(function(event){
+    event.preventDefault();
+    const userName=$("input#name").val();
+    const userAddress=$("input#address").val();
+    $("#final-order").click(function() {
+      $(".customer-info").hide();
+      $(".last-thing").show();
+      $(".customer-name").html(userName);
+      $(".deliver-to").html(userAddress);
+    });
+  });
 });
