@@ -1,4 +1,4 @@
-//Business Logic-------------------------------------------
+//Business Logic
 
 //Constructor function to make pizza pies.
 function PizzaPie(size, toppings) {
@@ -19,7 +19,6 @@ PizzaPie.prototype.sumPieCost = function() {
   }
   return this.cost;
 };
-
 
 //Constructor function to make order with a running total for total cost and a property 'keyToAssign' to increment.
 function Order() {
@@ -42,7 +41,7 @@ Order.prototype.givePieKey = function () {
 };
 
 
-//UI Logic--------------------------------------
+//UI Logic
 
 $(document).ready(function(){
   let customerOrder = new Order();
