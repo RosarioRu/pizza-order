@@ -1,6 +1,6 @@
 //Business Logic-------------------------------------------
 
-//Constructor function to make pizza pies.. need to somehow be sure the toppings parameter gets an array as argument!!
+//Constructor function to make pizza pies.
 function PizzaPie(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -45,20 +45,34 @@ Order.prototype.givePieKey = function () {
 //UI Logic--------------------------------------
 
 $(document).ready(function(){
-  
+  let customerOrder = new Order();
   $("form#make-your-own").submit(function(event){
     event.preventDefault();
-    const pizzaSize = $("input:radio[name=size]:checked").val();
-    console.log(pizzaSize);
-    const pizzaToppings = [];
-    let selectedToppings = $("input[type='checkbox']:checked");
-    for (let i=0; i<selectedToppings.length; i+=1) {
-      pizzaToppings.push($(selectedToppings[i]).val());
+    const selectedSize = $("input:radio[name=size]:checked").val();
+    const selectedToppings = [];
+    let pizzaToppings = $("input[type='checkbox']:checked");
+
+    for (let i=0; i<pizzaToppings.length; i+=1) {
+      selectedToppings.push($(pizzaToppings[i]).val());
     }
-    console.log(pizzaToppings);
+
+    const customerPizza = new PizzaPie(selectedSize, selectedToppings)
+    customerOrder.addPie(customerPizza);
+    console.log(customerOrder);
+    console.log("Your pixa will cost: " + customerPizza.cost);
+
+    
 
 
-
+    // $("#return-home").click(function() {
+    //   $("#return-home").hide();
+    //   $(".row").show();
+    //   $("input#first-name").val("");
+    //   $("input#last-name").val("");
+    //   $("input#age").val("");
+    //   $("input#initial-deposit").val("");
+    //   $("#test").text("");
+    // });
 
   });
 
